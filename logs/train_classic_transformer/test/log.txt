@@ -1,0 +1,20 @@
+Log file created on 2023-01-20 21:12:58.379033
+
+bs : 2
+chkpt : 
+datadir : /home/aldb/dataset/ILSVRC/Data/CLS-LOC
+dataset : cifar10
+device : cuda:0
+epochs : 90
+gpu_devices : [0]
+gpu_id : 0
+lr : 0.1
+lr_decay_epochs : [30, 60]
+lr_gamma : 0.1
+momentum : 0.9
+nw : 1
+save_dir : ./logs/train_classic_transformer/test
+trial : test
+warm_epochs : 0
+wd : 0.0001
+

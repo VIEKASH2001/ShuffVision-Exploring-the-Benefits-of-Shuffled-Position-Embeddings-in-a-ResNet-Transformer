@@ -1,0 +1,4 @@
+python train_classic.py --bs 256 --gpu_id 0,1 --datadir /local/scratch/c_adabouei/dataset/imagenet/ILSVRC/Data/CLS-LOC --trial baseline --lr 0.1 --save_dir /local/scratch/c_adabouei/chkpt/spatial_org
+
+
+python train_classic_transformer_puzzle_rotate.py --bs 256 --gpu_id 6,7 --datadir /local/scratch/c_adabouei/dataset/imagenet/ILSVRC/Data/CLS-LOC --trial rotate_res18_0.4_0.4_0.1_0.1 --lr 0.1 --nw 8 --save_dir /local/scratch/c_adabouei/chkpt/spatial_org
