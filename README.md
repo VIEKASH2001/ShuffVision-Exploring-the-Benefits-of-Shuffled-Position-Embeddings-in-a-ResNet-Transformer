@@ -17,14 +17,14 @@ We suggest using Imagenet classification as a pretext task to transfer knowledge
 - Detectron2
 - Imagenet Dataset
 
-###Usage
+### Usage
 - Install the required libraries
 - Download the Imagenet dataset and place it in the appropriate directory
 - Train the model on Imagenet classification dataset
 - Fine-tune the model on object detection using Detectron2
 - Evaluate the results
 
-###Acknowledgments
+### Acknowledgments
 This project was completed as part of the Visual Learning and Recognition course (16824) at Carnegie Mellon University
 
 
