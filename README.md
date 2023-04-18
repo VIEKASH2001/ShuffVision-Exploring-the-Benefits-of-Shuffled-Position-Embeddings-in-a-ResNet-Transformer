@@ -1,10 +1,33 @@
-This project involves using unsupervised contrastive representation learning to detect particles in CryoET data, with the goal of deriving biological information from the tomograms. As the first to attempt particle detection in the SHREC 2021 CryoET dataset, the team achieved an impressive AUCROC of 71.6% and F1 Score of 0.672.
+The goal of this project is to explore the effectiveness of shuffled position embeddings in a ResNet-Transformer architecture for object recognition tasks.
 
-To accomplish this, the team used 3D electron microscopy to analyze 10 tomograms, with edge detection algorithms used to identify which frames contained particles. Augmentations such as random contrast, rotation, blur, and cropping were applied before positive and negative pairs were sent for training. To solve similarity conflicts, PPG was used, and representations were learned using contrastive learning. The team used the Xnet loss on the projections and applied k-means clustering to convert the 9216-crop representation to a vector of 0s and 1s to indicate the presence of particles.
+###Dataset
+We have tested our model on the Imagenet dataset and have achieved better results compared to superior ResNet architectures.
 
-The team used various metrics such as F1 score, precision, recall, and confusion matrix to measure performance and analyze the spatial organization of deep nets. They developed a novel optimization routine using KL divergence and cross-entropy loss for spatially normal and puzzled inputs, which proved effective in improving the accuracy of object detection and segmentation tasks.
+###Architecture
+We have used transformers that take the position tokens as input, which are known to act on images positionally. We have also proved our puzzled algorithm by testing it on the dataset. The architecture uses a novel loss function, which includes cross-entropy and KL divergence.
 
-Overall, this project showcases the team's ability to leverage cutting-edge techniques in unsupervised contrastive representation learning to detect particles in CryoET data and highlights the potential of this approach to derive valuable biological information from complex imaging data.
+###Object Detection and Segmentation
+Our model is suitable for tasks such as object detection and segmentation, where spatial organization is crucial. It is important to note that this model does not perform significantly better on classification tasks, as these tasks have less to do with localization or spatial organization.
+
+###Knowledge Transfer
+We suggest using Imagenet classification as a pretext task to transfer knowledge to the Detectron mode for object detection.
+
+###Requirements
+PyTorch
+Detectron2
+Imagenet Dataset
+
+###Usage
+Install the required libraries
+Download the Imagenet dataset and place it in the appropriate directory
+Train the model on Imagenet classification dataset
+Fine-tune the model on object detection using Detectron2
+Evaluate the results
+
+###Acknowledgments
+This project was completed as part of the Visual Learning and Recognition course (16824) at Carnegie Mellon University
+
+
 
 # SpatialOrg
 
