@@ -1,32 +1,31 @@
 The goal of this project is to explore the effectiveness of shuffled position embeddings in a ResNet-Transformer architecture for object recognition tasks.
 
-###Dataset
+### Dataset
 We have tested our model on the Imagenet dataset and have achieved better results compared to superior ResNet architectures.
 
-###Architecture
+### Architecture
 We have used transformers that take the position tokens as input, which are known to act on images positionally. We have also proved our puzzled algorithm by testing it on the dataset. The architecture uses a novel loss function, which includes cross-entropy and KL divergence.
 
-###Object Detection and Segmentation
+### Object Detection and Segmentation
 Our model is suitable for tasks such as object detection and segmentation, where spatial organization is crucial. It is important to note that this model does not perform significantly better on classification tasks, as these tasks have less to do with localization or spatial organization.
 
-###Knowledge Transfer
+### Knowledge Transfer
 We suggest using Imagenet classification as a pretext task to transfer knowledge to the Detectron mode for object detection.
 
-###Requirements
-PyTorch
-Detectron2
-Imagenet Dataset
+### Requirements
+- PyTorch
+- Detectron2
+- Imagenet Dataset
 
 ###Usage
-Install the required libraries
-Download the Imagenet dataset and place it in the appropriate directory
-Train the model on Imagenet classification dataset
-Fine-tune the model on object detection using Detectron2
-Evaluate the results
+- Install the required libraries
+- Download the Imagenet dataset and place it in the appropriate directory
+- Train the model on Imagenet classification dataset
+- Fine-tune the model on object detection using Detectron2
+- Evaluate the results
 
 ###Acknowledgments
 This project was completed as part of the Visual Learning and Recognition course (16824) at Carnegie Mellon University
-
 
 
 # SpatialOrg
