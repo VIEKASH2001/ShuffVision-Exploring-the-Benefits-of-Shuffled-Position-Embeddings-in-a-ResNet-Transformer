@@ -1,3 +1,7 @@
+<a>
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=50&duration=2000&pause=500&multiline=true&width=1500&height=80&lines=ShuffVision" alt="Typing SVG" />
+</a>
+
 The goal of this project is to explore the effectiveness of shuffled position embeddings in a ResNet-Transformer architecture for object recognition tasks.
 
 ### Dataset
